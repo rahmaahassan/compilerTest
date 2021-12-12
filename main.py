@@ -1,9 +1,9 @@
 import AtL
 
 while True:
-    text = input('Rahma Zakaria>')
+    text = input('@L>')
     # print(text)
-    result, error = AtL.run(text)
+    result,error = AtL.run('<stdin>',text)
     if error: print(error.as_string())
-    else:
+    elif result:
         print(result)
